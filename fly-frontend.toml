@@ -1,0 +1,17 @@
+app = "your-frontend-app-name"  # Replace with unique Fly.io app name
+
+[build]
+  image = ""
+
+[env]
+  PORT = "5173"
+
+[http_service]
+  internal_port = 5173
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+
+# To deploy:
+#   fly launch --config fly-frontend.toml --copy-config --now

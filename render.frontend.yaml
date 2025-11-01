@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: ai-compliance-frontend
+    env: static
+    plan: free
+    buildCommand: |
+      npm ci --legacy-peer-deps
+      npm run build
+    staticPublishPath: frontend/dist
+    rootDir: frontend
+    autoDeploy: true
+    branch: main

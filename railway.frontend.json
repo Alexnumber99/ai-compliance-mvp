@@ -1,0 +1,12 @@
+{
+  "build": {
+    "dockerfile": "frontend/Dockerfile",
+    "context": "."
+  },
+  "start": {
+    "cmd": "npx serve -s dist -l $PORT",
+    "env": {
+      "PORT": 5173
+    }
+  }
+}
