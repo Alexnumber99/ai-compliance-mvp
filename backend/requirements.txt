@@ -1,0 +1,9 @@
+fastapi==0.110.0
+uvicorn==0.27.0.post1
+python-multipart==0.0.9
+pydantic==2.5.3
+beautifulsoup4==4.10.0
+requests==2.31.0
+
+# PDF parsing library for analysis
+PyPDF2==3.0.1
